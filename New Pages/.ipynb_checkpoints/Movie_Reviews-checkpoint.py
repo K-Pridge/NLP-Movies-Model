@@ -102,30 +102,7 @@ show_train = st.checkbox("Show training data.",value=True)
 show_test = st.checkbox("Show test data.", value=True)
 show_model_params =st.checkbox("Show model params.", value=False)
 if st.button("Show model evaluation."):
-    
-    if show_train == True:
-        # Display training data results
-        y_pred_train = clf_pipe.predict(X_train)
-        report_str, conf_mat = classification_metrics_streamlit(y_train, y_pred_train, label='Training Data')
-        st.text(report_str)
-        st.pyplot(conf_mat)
-        st.text("\n\n")
-    if show_test == True: 
-        # Display the trainin data resultsg
-        y_pred_test = clf_pipe.predict(X_test)
-        report_str, conf_mat = classification_metrics_streamlit(y_test, y_pred_test, cmap='Reds',label='Test Data')
-        st.text(report_str)
-        st.pyplot(conf_mat)
-        st.text("\n\n")
-        
-    if show_model_params:
-        # Display model params
-        st.markdown("####  Model Parameters:")
-        st.write(clf_pipe.get_params())
-else:
-    st.empty()
-
-
+    pass # placeholder
 
 
 
