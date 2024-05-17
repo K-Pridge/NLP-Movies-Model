@@ -1,0 +1,1 @@
+{"data": {"raw": {"full": "Data-NLP/movie_reviews_v2.csv", "eda": "Data-NLP/processed_data.csv"}, "ml": {"train": "Data-NLP/train.joblib", "test": "Data-NLP/test.joblib", "label_encoder": "Data-NLP/label-encoder.joblib", "target_lookup": "Data-NLP/target-lookup-dict.joblib"}}, "models": {"clf": "Models/clf_pipe.joblib"}}
